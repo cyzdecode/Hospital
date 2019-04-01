@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/hosR1"
+        android:title="挂号信息管理" />
+    <item
+        android:id="@+id/hosR2"
+        android:title="住院办理" />
+    <item
+        android:id="@+id/hosR3"
+        android:title="住院结算" />
+    <item
+        android:id="@+id/hosR4"
+        android:title="在院发药" />
+    <item
+        android:id="@+id/hosR5"
+        android:title="药品管理" />
+    <item
+        android:id="@+id/hosR6"
+        android:title="检查收费项目登记" />
+    <item
+        android:id="@+id/hosR7"
+        android:title="收费项目管理" />
+    <item
+        android:id="@+id/hosR8"
+        android:title="门诊医生管理" />
+    <item
+        android:id="@+id/hosR9"
+        android:title="用户管理" />
+    <item
+        android:id="@+id/hosR10"
+        android:title="角色管理" />
+    <item
+        android:id="@+id/hosR11"
+        android:title="资源管理" />
+    <item
+        android:id="@+id/hosR12"
+        android:title="密码管理" />
+
+</menu>

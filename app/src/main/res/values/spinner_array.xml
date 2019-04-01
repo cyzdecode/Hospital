@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="data">
+        <item>安宁</item>
+        <item>敖鸣</item>
+        <item>蔡斌</item>
+        <item>陈凡</item>
+        <item>丛伟</item>
+    </string-array>
+
+</resources>

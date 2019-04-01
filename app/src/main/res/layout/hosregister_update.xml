@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hosR_toolbar"
+        android:background="@color/colorBule"
+        >
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="修改"
+            android:textColor="@color/colorWhite"
+            android:textSize="22dp"
+            android:gravity="center"
+            />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_below="@id/hosR_toolbar"
+        android:background="#fffff0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="病历号"
+                    android:background="@drawable/style"
+                    android:gravity="center"/>
+                <TextView
+                    android:id="@+id/hosR_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="center"
+                    android:background="@drawable/style"
+                    android:hint="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="姓名"
+                    android:background="@drawable/style"
+                    android:gravity="center" />
+                <EditText
+                    android:id="@+id/hosR_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="3dp"
+                    android:background="@drawable/style"
+                    android:hint="小米" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="性别"
+                    android:background="@drawable/style"
+                    android:gravity="center"/>
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:background="@drawable/style"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/select_sex_boy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="7dp"
+                     android:text="男"
+                    app:theme="@style/cksave"
+                    android:checked="true"/>
+                <RadioButton
+                    android:id="@+id/select_sex_girl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="7dp"
+                    android:text="女"
+                    app:theme="@style/cksave"
+                    android:checked="true"/>
+                </RadioGroup>
+                <!--<EditText
+                    android:id="@+id/hosR_sex"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="3dp"
+                    android:background="@drawable/style"
+                    android:gravity="center"
+                    android:hint="1" />-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="年龄"
+                    android:background="@drawable/style"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/hosR_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="3dp"
+                    android:background="@drawable/style"
+                    android:gravity="center"
+                    android:hint="20" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="联系电话"
+                    android:background="@drawable/style"
+                    android:gravity="center"/>
+                <EditText
+                    android:id="@+id/hosR_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="3dp"
+                    android:background="@drawable/style"
+                    android:hint="869775675" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="身份证号"
+                    android:background="@drawable/style"
+                    android:gravity="center"/>
+                <EditText
+                    android:id="@+id/hosR_idCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="3dp"
+                    android:background="@drawable/style"
+                    android:hint="1243325" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="100dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:background="@drawable/style"
+                    android:text="医生" />
+
+                <Spinner
+                    android:id="@+id/hosR_docname"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/style"
+                    android:textAlignment="center"
+                    android:entries="@array/data">
+
+                </Spinner>
+
+                <!--<EditText-->
+                    <!--android:id="@+id/hosR_docname"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="45dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:layout_marginLeft="3dp"-->
+                    <!--android:background="@drawable/style"-->
+                    <!--android:hint="吴冬梅" />-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="挂号费"
+                    android:background="@drawable/style"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/hosR_regPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="3dp"
+                    android:background="@drawable/style"
+                    android:hint="8.0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="挂号时间"
+                    android:background="@drawable/style"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/hosR_creatTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="3dp"
+                    android:background="@drawable/style"
+                    android:hint="2019-09-20" />
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginBottom="3dp">-->
+            <!--<TextView-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:text="社保号"-->
+            <!--android:background="@drawable/style"-->
+            <!--android:gravity="center"/>-->
+            <!--<EditText-->
+            <!--android:id="@+id/hosR_medical"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_marginLeft="3dp"-->
+            <!--android:background="@drawable/style"-->
+            <!--android:text="869775675" />-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginBottom="3dp">-->
+            <!--<TextView-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:text="是否自费"-->
+            <!--android:background="@drawable/style"-->
+            <!--android:gravity="center"/>-->
+            <!--<EditText-->
+            <!--android:id="@+id/hosR_selfPrice"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_marginLeft="3dp"-->
+            <!--android:background="@drawable/style"-->
+            <!--android:text="免费" />-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginBottom="3dp">-->
+            <!--<TextView-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:text="初复诊"-->
+            <!--android:background="@drawable/style"-->
+            <!--android:gravity="center"/>-->
+            <!--<EditText-->
+            <!--android:id="@+id/hosR_lookDoctor"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_marginLeft="3dp"-->
+            <!--android:background="@drawable/style"-->
+            <!--android:text="869775675" />-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginBottom="3dp">-->
+            <!--<TextView-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:text="所挂科室"-->
+            <!--android:background="@drawable/style"-->
+            <!--android:gravity="center"/>-->
+            <!--<EditText-->
+            <!--android:id="@+id/d_keshi"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_marginLeft="3dp"-->
+            <!--android:background="@drawable/style"-->
+            <!--android:text="869775675" />-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginBottom="3dp">-->
+            <!--<TextView-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:text="备注"-->
+            <!--android:background="@drawable/style"-->
+            <!--android:gravity="center"/>-->
+            <!--<EditText-->
+            <!--android:id="@+id/hosR_remark"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_marginLeft="3dp"-->
+            <!--android:background="@drawable/style"-->
+            <!--android:text="869775675" />-->
+            <!--</LinearLayout>-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+                android:gravity="center">
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/hosregister_add_return"
+                    android:textColor="#fff"
+                    android:textSize="16dp"
+                    android:background="@drawable/button_round_edittext"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="返回"/>
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/hosregister_add_save"
+                    android:textColor="#fff"
+                    android:textSize="16dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/button_round_edittext"
+                    android:text="保存"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
